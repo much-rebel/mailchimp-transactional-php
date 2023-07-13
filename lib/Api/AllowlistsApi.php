@@ -44,7 +44,10 @@ use MailchimpTransactional\ObjectSerializer;
  */
 class AllowlistsApi
 {
-    protected $Configuration;
+    /**
+     * @var Configuration
+     */
+    protected $config;
 
     public function __construct(Configuration $config = null)
     {
